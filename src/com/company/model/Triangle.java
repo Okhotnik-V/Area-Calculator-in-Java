@@ -1,16 +1,19 @@
-package com.company;
+package com.company.model;
+
+
+import com.company.ui.Selective;
 
 import java.util.Scanner;
 
-public class Triangle implements Selective{
-    Scanner scanner = new Scanner(System.in);
+public class Triangle implements Selective {
 
-    public int calculate (){
+    public double calculate (Scanner scanner){
         System.out.println("Please enter the base of the triangle: ");
         double base = scanner.nextDouble();
         System.out.println("Please enter the height of the triangle: ");
         double height = scanner.nextDouble();
-        System.out.println(0.5 * base * height);
-        return 0;
+        double reply = 0.5 * base * height;
+        System.out.println(reply);
+        return reply;
     }
 }
