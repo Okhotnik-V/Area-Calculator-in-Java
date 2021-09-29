@@ -1,20 +1,20 @@
 package com.company.model;
 
-
 import com.company.ui.Calculated;
 import com.company.ui.Numerical;
 
 import java.util.Scanner;
 
-public class Triangle implements Calculated {
+public class Righttriangle implements Calculated {
     Numerical number = new Number();
+
     @Override
-    public double calculate (Scanner scanner){
-        System.out.println("Please enter the base of the triangle: ");
+    public double calculate(Scanner scanner) {
+        System.out.println("Please enter the a of the triangle: ");
         double base = number.explore(scanner);
-        System.out.println("Please enter the height of the triangle: ");
+        System.out.println("Please enter the b of the triangle: ");
         double height = number.explore(scanner);
-        double reply = 0.5 * base * height;
+        double reply = base * height;
         return reply;
     }
 }
