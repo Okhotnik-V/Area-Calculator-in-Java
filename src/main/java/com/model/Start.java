@@ -1,8 +1,10 @@
-package com.company.model;
+package com.model;
 
-import com.company.ui.Calculated;
-import com.company.ui.Checked;
-import com.company.ui.Starting;
+
+
+import com.ui.Calculated;
+import com.ui.Checked;
+import com.ui.Starting;
 
 import java.util.Scanner;
 
@@ -21,8 +23,6 @@ public class Start implements Starting {
                 "\nEnter 3 to find the area of a Triangle," +
                 "\nEnter 4 to find the area of a Circle." +
                 "\nEnter 5 to find the area of a Right Triangle,");
-
-
         switch (checked.verify(scanner)) {
             case 1:
                 System.out.println(rectangle.calculate(scanner));

@@ -1,8 +1,7 @@
-package com.company.model;
+package com.model;
 
-import com.company.ui.Checked;
-import com.company.ui.Numerical;
-
+import com.ui.Checked;
+import com.ui.Numerical;
 import java.util.Scanner;
 
 public class Check implements Checked {

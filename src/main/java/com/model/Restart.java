@@ -1,11 +1,10 @@
-package com.company.model;
+package com.model;
 
-import com.company.ui.Starting;
-
+import com.ui.Starting;
 import java.util.Scanner;
 
 public class Restart implements Starting {
-    Starting starting = new Start();
+    Starting starting = (Starting) new Start();
 
     public void started (Scanner scanner){
         System.out.println("Do you want to continue using the program? 1-YES, Others-EXIT");
