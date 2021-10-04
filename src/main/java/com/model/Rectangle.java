@@ -2,6 +2,7 @@ package com.model;
 
 import com.ui.Calculated;
 import com.ui.Numerical;
+
 import java.util.Scanner;
 
 public class Rectangle extends RectanglePerimetry implements Calculated {
@@ -14,7 +15,7 @@ public class Rectangle extends RectanglePerimetry implements Calculated {
         System.out.println("Please enter the width of the rectangle: ");
         double width = number.explore(scanner);
         double reply = length * width;
-        calculation(length,width);
+        calculation(length, width);
         return reply;
     }
 }

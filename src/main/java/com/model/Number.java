@@ -1,6 +1,7 @@
 package com.model;
 
 import com.ui.Numerical;
+
 import java.util.Scanner;
 
 public class Number implements Numerical {

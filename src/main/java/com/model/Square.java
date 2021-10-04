@@ -2,6 +2,7 @@ package com.model;
 
 import com.ui.Calculated;
 import com.ui.Numerical;
+
 import java.util.Scanner;
 
 public class Square extends SquarePerimetry implements Calculated {

@@ -2,7 +2,6 @@ package com.model;
 
 
 import com.ui.Calculated;
-import com.ui.Checked;
 import com.ui.Starting;
 
 import java.util.Scanner;
@@ -13,7 +12,7 @@ public class Start implements Starting {
     Calculated triangle = new Triangle();
     Calculated circle = new Circle();
     Calculated righttriangle = new Righttriangle();
-    Checked checked = new Check();
+
 
     @Override
     public void started(Scanner scanner) {
@@ -23,21 +22,25 @@ public class Start implements Starting {
                 "\nEnter 3 to find the area of a Triangle," +
                 "\nEnter 4 to find the area of a Circle." +
                 "\nEnter 5 to find the area of a Right Triangle,");
-        switch (checked.verify(scanner)) {
-            case 1:
+        switch (scanner.nextLine()) {
+            case "1":
                 System.out.println(rectangle.calculate(scanner));
                 break;
-            case 2:
+            case "2":
                 System.out.println(square.calculate(scanner));
                 break;
-            case 3:
+            case "3":
                 System.out.println(triangle.calculate(scanner));
                 break;
-            case 4:
+            case "4":
                 System.out.println(circle.calculate(scanner));
                 break;
-            case 5:
+            case "5":
                 System.out.println(righttriangle.calculate(scanner));
+                break;
+            default:
+                System.out.println("Invalid number, please enter a number from 1 to 5");
+                started(scanner);
                 break;
         }
     }
