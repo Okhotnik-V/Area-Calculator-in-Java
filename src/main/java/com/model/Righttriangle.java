@@ -4,7 +4,7 @@ import com.ui.Calculated;
 import com.ui.Numerical;
 import java.util.Scanner;
 
-public class Righttriangle implements Calculated {
+public class Righttriangle extends RighttrianglePerimetry implements Calculated {
     Numerical number = new Number();
 
     @Override
@@ -14,6 +14,7 @@ public class Righttriangle implements Calculated {
         System.out.println("Please enter the b of the triangle: ");
         double height = number.explore(scanner);
         double reply = base * height;
+        calculation(base, height);
         return reply;
     }
 }

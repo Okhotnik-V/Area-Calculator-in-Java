@@ -4,7 +4,7 @@ import com.ui.Calculated;
 import com.ui.Numerical;
 import java.util.Scanner;
 
-public class Rectangle implements Calculated {
+public class Rectangle extends RectanglePerimetry implements Calculated {
     Numerical number = new Number();
 
     @Override
@@ -14,6 +14,7 @@ public class Rectangle implements Calculated {
         System.out.println("Please enter the width of the rectangle: ");
         double width = number.explore(scanner);
         double reply = length * width;
+        calculation(length,width);
         return reply;
     }
 }
