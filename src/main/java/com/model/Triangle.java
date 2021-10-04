@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Triangle implements Calculated {
     Numerical number = new Number();
+
     @Override
     public double calculate(Scanner scanner) {
         System.out.println("Please enter the base of the triangle: ");

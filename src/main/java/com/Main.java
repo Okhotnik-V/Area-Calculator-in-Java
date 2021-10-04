@@ -15,6 +15,5 @@ public class Main {
         startingStart.started(scanner);
         startingRestart.started(scanner);
     }
-
 }
 

@@ -11,10 +11,10 @@ import static org.mockito.Mockito.when;
 class RighttriangleTest {
     Righttriangle righttriangle = new Righttriangle();
     Scanner mockScanner = mock(Scanner.class);
+
     @Test
     public void righttriangleTest () {
         when(mockScanner.nextLine()).thenReturn("20");
         assertEquals(400,righttriangle.calculate(mockScanner));
     }
-
 }

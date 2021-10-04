@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Number implements Numerical {
 
+    @Override
     public double explore (Scanner scanner){
         String number;
         number = scanner.nextLine();
@@ -20,6 +21,5 @@ public class Number implements Numerical {
             num = Double.parseDouble(number);
         }
         return num;
-
     }
 }

@@ -11,10 +11,10 @@ import static org.mockito.Mockito.when;
 class SquareTest {
     Square square = new Square();
     Scanner mockScanner = mock(Scanner.class);
+
     @Test
     public void squareTest() {
         when(mockScanner.nextLine()).thenReturn("50");
         assertEquals(2500,square.calculate(mockScanner));
     }
-
 }

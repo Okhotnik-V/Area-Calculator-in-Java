@@ -1,7 +1,6 @@
 package com.model;
 
 
-
 import com.ui.Calculated;
 import com.ui.Checked;
 import com.ui.Starting;
@@ -16,6 +15,7 @@ public class Start implements Starting {
     Calculated righttriangle = new Righttriangle();
     Checked checked = new Check();
 
+    @Override
     public void started(Scanner scanner) {
         System.out.println("Welcome to the Area Calculator! " +
                 "\nEnter 1 to find the area of a Rectangle, " +
@@ -39,8 +39,6 @@ public class Start implements Starting {
             case 5:
                 System.out.println(righttriangle.calculate(scanner));
                 break;
-
         }
-
     }
 }

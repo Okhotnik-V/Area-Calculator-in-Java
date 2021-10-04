@@ -11,11 +11,10 @@ import static org.mockito.Mockito.when;
 class TriangleTest {
     Triangle triangle = new Triangle();
     Scanner mockScanner = mock(Scanner.class);
+
     @Test
     public void triangleTest() {
         when(mockScanner.nextLine()).thenReturn("15");
         assertEquals(112.5,triangle.calculate(mockScanner));
-
     }
-
 }

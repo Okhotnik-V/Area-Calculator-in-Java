@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Check implements Checked {
 
+    @Override
     public int verify(Scanner scanner){
         Numerical number = new Number();
         int swich = (int) Math.round(number.explore(scanner));
